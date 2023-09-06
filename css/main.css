@@ -1,21 +1,21 @@
 @font-face {
     font-family: Poppins-Regular;
-    src: url('../fonts/poppins/Poppins-Regular.ttf');
+    src: url('../fonts/poppins/Poppins-Regular.ttf'); /*TODO: Jean Paul -> Verificar esse diretorio pois não existe diretório, deletar esse comentário após correção!*/
 }
 
 @font-face {
     font-family: Poppins-Bold;
-    src: url('../fonts/poppins/Poppins-Bold.ttf');
+    src: url('../fonts/poppins/Poppins-Bold.ttf'); /*TODO: Jean Paul -> Verificar esse diretorio pois não existe diretório, deletar esse comentário após correção!*/
 }
 
 @font-face {
     font-family: Poppins-Medium;
-    src: url('../fonts/poppins/Poppins-Medium.ttf');
+    src: url('../fonts/poppins/Poppins-Medium.ttf'); /*TODO: Jean Paul -> Verificar esse diretorio pois não existe diretório, deletar esse comentário após correção!*/
 }
 
 @font-face {
     font-family: Montserrat-Bold;
-    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf'); /*TODO: Jean Paul -> Verificar esse diretorio pois não existe diretório, deletar esse comentário após correção!*/
 }
 
 body {
@@ -111,7 +111,7 @@ iframe {
 }
 
 
-/*efeito*/
+/* Efeito */
 .focus-input100 {
     display: block;
     position: absolute;
@@ -130,10 +130,8 @@ iframe {
     animation: anim-shadow 0.5s ease-in-out forwards;
 }
 
-
 .symbol-input100 {
     font-size: 15px;
-
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-box;
@@ -184,8 +182,8 @@ iframe {
     background: #4A0C57;
 }
 
-[ Responsive ]
-
+/*TODO: Jean Paul -> Comentei a linha de baixo pois poderia ocasionar um error, favor deletar e limpar comentário*/
+/*[ Responsive ]*/
 @media (max-width: 992px) {
     .wrap-login100 {
         padding: 177px 90px 33px 85px;
@@ -225,11 +223,9 @@ iframe {
         visibility: visible;
         opacity: 1;
     }
-}*/
-
+}
 
 /*[ Alert validate ]*/
-
 .validate-input {
     position: relative;
 }
