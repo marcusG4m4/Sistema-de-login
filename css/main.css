@@ -1,0 +1,242 @@
+@font-face {
+    font-family: Poppins-Regular;
+    src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Bold;
+    src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+    font-family: Poppins-Medium;
+    src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+    font-family: Montserrat-Bold;
+    src: url('../fonts/montserrat/Montserrat-Bold.ttf');
+}
+
+body {
+    background: -webkit-linear-gradient(-135deg, #4A0C57, #c850c0);
+    background: -o-linear-gradient(-135deg, #4A0C57, #c850c0);
+    background: -moz-linear-gradient(-135deg, #4A0C57, #c850c0);
+    background: linear-gradient(-135deg, #4A0C57, #c850c0);
+}
+
+h3 {
+    color: #A700D0;
+    text-align: center;
+}
+
+input {
+    outline: none;
+    border: none;
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: transparent;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+.container-login100 {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+.wrap-login100 {
+    width: 475px;
+    height: 550px;
+    background: #ffffff;
+    border-radius: 20px;
+    justify-content: center;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.login100-form {
+    width: 410px;
+    padding: 1px;
+    margin: auto;
+}
+
+.login100-form-title {
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 35px;
+    color: #A700D0;
+    line-height: 1.2;
+    text-align: center;
+    display: block;
+    padding-bottom: 10px;
+    padding-top: 20px;
+}
+
+.wrap-input100 {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    margin-bottom: 2px;
+}
+
+.input100 {
+    font-family: Poppins-Medium, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666666;
+    display: block;
+    width: 76%;
+    background: #e6e6e6;
+    height: 50px;
+    border-radius: 5px;
+    padding: 0 30px 0 68px;
+}
+
+
+/*efeito*/
+.focus-input100 {
+    display: block;
+    position: absolute;
+    border-radius: 5px;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    box-shadow: 0 0 0 0;
+    color: #A700D0;
+}
+
+.input100:focus + .focus-input100 {
+    -webkit-animation: anim-shadow 0.5s ease-in-out forwards;
+    animation: anim-shadow 0.5s ease-in-out forwards;
+}
+
+
+.symbol-input100 {
+    font-size: 15px;
+
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    align-items: center;
+    position: absolute;
+    border-radius: 25px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: 35px;
+    pointer-events: none;
+    color: #666666;
+
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.input100:focus + .focus-input100 + .symbol-input100 {
+    color: #A700D0;
+    padding-left: 28px;
+}
+
+/*[ Button ]*/
+.login100-form-btn {
+    font-family: Montserrat-Bold, sans-serif;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #ffffff;
+    text-transform: uppercase;
+
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    background: #A700D0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 15px;
+}
+
+.login100-form-btn:hover {
+    background: #4A0C57;
+}
+
+/*[ Responsive ]
+
+@media (max-width: 992px) {
+    .wrap-login100 {
+        padding: 177px 90px 33px 85px;
+    }
+
+    .login100-pic {
+        width: 35%;
+    }
+
+    .login100-form {
+        width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .wrap-login100 {
+        padding: 100px 80px 33px 80px;
+    }
+
+    .login100-pic {
+        display: none;
+    }
+
+    .login100-form {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrap-login100 {
+        padding: 100px 15px 33px 15px;
+    }
+}
+
+@media (max-width: 992px) {
+    .alert-validate::before {
+        visibility: visible;
+        opacity: 1;
+    }
+}*/
+
+
+/*[ Alert validate ]*/
+
+.validate-input {
+    position: relative;
+}
+
+.alert-validate:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
+
